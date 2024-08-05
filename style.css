@@ -1,0 +1,426 @@
+*{
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    text-decoration: None;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    color: black;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 12% 40px;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4
+}
+
+.logo{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.logo:hover{
+    color:orangered;
+    transform: scale(1.5);
+}
+
+span{
+    color: orangered;
+}
+
+.navbar a{
+    font-size: 18px;
+    margin-left: 50px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
+
+.navbar a:hover, 
+.navbar a:active{
+    color: orangered;
+}
+
+#about{
+    max-width: 70%;
+    margin-left: 30px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes h1_text{
+    from {left:-600px}
+    to {left:0px}
+}
+
+.vision h1{
+    position: relative;
+    font-size: 45px;
+    color: black;
+    animation-name: h1_text;
+    animation-duration: 4s;
+}
+
+.vision h2{
+    font-size: 40px;
+    color: black;
+}
+
+.vision h3{
+    font-size: 33px;
+    color: black;
+}
+
+.vision p{
+    position: relative;
+    font-size: 20px;
+    color: black;
+}
+
+.vision h4{
+    font-size: 25px;
+    color: black;    
+}
+
+.vision ol li{
+    font-size: 18px;
+    color:black;
+}
+
+.myintro{
+    width: 100%;
+    max-width: 40%;
+    padding: 120px;
+    position: relative;
+    height: auto;
+}
+
+section:nth-child(odd){
+    background: rgb(64, 64, 64);
+}
+
+#bootcamp{
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.why h1{
+    font-size: 40px;
+    text-decoration: underline;
+    color: white;
+    text-align: right;
+    margin-right:10%;
+}
+
+.why p{
+    font-size: 20px;
+    position: relative;
+    color: white; 
+    text-align: right;
+    margin-left: 40%;
+    margin-right:10%;
+}
+
+.python{
+    width: 40%;
+    display: block;
+    align-items: center;
+}
+
+#contact{
+    max-height: 1000px;
+}
+
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.paragraph{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.paragraph h1{
+    width: 100%;
+    font-size: 40px;
+    color: orangered;
+    display: inline-block;
+    animation: scroll 7s linear infinite;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
+@keyframes scrollright{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
+}
+
+.paragraph p{
+    width: 100%;
+    font-size: 20px;
+    color: black; 
+    animation: scrollright 8s linear infinite;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card{
+    flex: 1 1 300px;
+    background-color: rgb(211, 210, 210);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px black;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card h3{
+    font-size: 18px;
+    margin-bottom: 14px;
+    margin-left: 3px
+}
+
+.card p{
+    font-size: 16px;
+    margin-left: 3px
+}
+
+.card .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color:white;
+    text-decoration: None;
+}
+
+#contact{
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+footer h2{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footcontainer{
+    width:100%;
+    padding: 10px 30px 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: white;
+    margin:10px;
+    border-radius: 50%;
+}
+
+.icons a i{
+    font-size: 28px;
+    color: rgb(64, 64, 64);
+}
+
+.icons a:hover{
+    background-color: black;
+    transition:0.7s;
+}
+
+.icons a:hover i{
+    color: white;
+    transition:0.7s;
+}
+
+.FootNav{
+    margin: 30px 0;
+}
+
+.FootNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.FootNav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.FootNav ul li a:hover{
+    opacity: 1;
+}
+
+.bottom{
+    text-align: center;
+}
+.bottom p{
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 700px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navbar a {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+      }
+    .FootNav ul{
+        flex-direction: column;
+    }
+    .FootNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+#info{
+    display: flex;              
+    justify-content: center;    
+    align-items: center;       
+    flex-direction: column;     
+    margin-top: 100px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 15px;
+}
+
+.gallery img{
+    width: 300px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.gallery img:hover{
+    cursor:pointer;
+    opacity: 0.5;
+    transition:0.5s;
+}
+
+.inner-text{
+    margin-top: 10px;
+    margin-left: 30px;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:flex;
+    align-items: flex-start;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.inner-text:hover{
+    opacity: 1;
+}
+
+.inner-text h2{
+    color: red;
+    font-size: 16px;
+}
+
+.gallery a{
+    position: relative;
+    display: inline-block;
+}
+
+.illustration h2{
+    color:orangered;
+    font-size: 40px;
+}
+
+.illustration p{
+    color:black;
+    font-size: 23px;
+}
+
+.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+}
+  
+.scroll-container img {
+    padding: 10px;
+}
+
+#more{
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#more p{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+}
